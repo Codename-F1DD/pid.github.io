@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopUp Game Murah</title>
+    <link rel="stylesheet" href="pisstyle.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h1>PidPedia</h1>
+    <ul>
+        <input type="text" id="search" placeholder="Cari game..." onkeyup="searchGame()">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#testi">Testimoni</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <img src="itachi.png" class="hero-img">
+    <h2>Top Up Game Cepat & Murah? Ya di pidpedia solusinya</h2>
+    <p>Diamond, Jasa joki rank, isi saldo dan lainnya langsung masuk dalam hitungan detik!</p>
+    <button onclick="scrollToProduk()">Yuk buruan top Up Sekarang!</button>
+</section>
+
+<!-- Produk -->
+<section id="produk" class="produk">
+    <h2>Game Populer</h2>
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/6/6d/Mobile_Legends_Bang_Bang_logo.png">
+      <h3>Mobile Legends</h3>
+      <p>Mulai dari Rp5.000</p>
+      <button onclick="beli('Mobile Legends')">Beli</button>
+</div> 
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/en/0/0f/Garena_Free_Fire_logo.png">
+      <h3>Free Fire</h3>
+      <p>Mulai dari Rp3.000</p>
+      <button onclick="beli('Free Fire')">Beli</button>
+</div>
+    <div class="card">
+     <img src="https://upload.wikimedia.org/wikipedia/en/4/44/PUBG_Mobile_logo.png">
+    <h3>PUBG Mobile</h3>
+    <p>Mulai dari Rp10.000</p>
+    <button onclick="beli('PUBG Mobile')">Beli</button>
+</div>
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Valorant_logo.png">
+    <h3>Valorant</h3>
+    <p>Mulai dari Rp15.000</p>
+    <button onclick="beli('Valorant')">Beli</button>
+</div>
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Roblox_logo.png">
+    <h3>Roblox</h3>
+    <p>Mulai dari Rp5.000</p>
+    <button onclick="beli('Roblox')">Beli</button>
+</div>
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Magic_chess_logo.png">
+    <h3>magic chess</h3>
+    <p>Mulai dari Rp10.000</p>
+    <button onclick="beli('Magic chees')">Beli</button>
+</div>
+<div class="card">
+    <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/Isi_saldo_logo.png">
+    <h3>Isi saldo gopay, dana, dan ovo</h3>
+    <p>Mulai dari Rp25.000</p>
+    <button onclick="beli('Isi saldo')">Beli</button>
+</div>
+</section>
+
+<!-- Testimoni -->
+<section id="testi" class="testi">
+    <h2>KOMENTAR</h2>
+    <div class="testi-box">
+        <p>Dari @arfyanzz</p>
+        <span>Pesan : Gas langsung beli disini murah banget</span>
+    </div>
+    <div class="testi-box">
+        <p>Dari @xyranz</p>
+        <span>Pesan : eh gila prosesnya ga pake lama </span>
+    </div>
+    <div class="testi-box">
+        <p>Dari @masmasphobia</p>
+        <span>Pesan : MUURRAAAAH BET COY!! </span>
+    </div>
+</section>
+
+<!-- Kontak -->
+<section id="kontak" class="kontak">
+    <h2>Hubungi Kami</h2>
+    <p>WhatsApp: 081316664438</p>
+    <p>Instagram: @pidpediastore</p>
+</section>
+
+<footer>
+    <p>© 2026 PidPedia. All rights reserved.</p>
+</footer>
+
+<script src="function orderNow() {.js"></script>
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <h2>Form Top Up</h2>
+        <input type="text" id="userId" placeholder="Masukkan ID Game">
+        <input type="text" id="noHp" placeholder="Masukkan Nomor HP">
+        
+        <select id="nominal">
+            <option value="10k">10.000</option>
+            <option value="20k">20.000</option>
+            <option value="50k">50.000</option>
+            <option value="50k">75.000</option>
+            <option value="50k">85.000</option>
+            <option value="50k">90.000</option>
+            <option value="50k">150.000</option>
+            <option value="50k">250.000</option>
+        </select>
+
+        <button onclick="prosesBayar()">Bayar</button>
+        <button onclick="tutupPopup()">Tutup</button>
+    </div>
+</div>
+</body>
+</html>
